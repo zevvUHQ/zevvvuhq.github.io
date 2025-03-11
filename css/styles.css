@@ -674,9 +674,16 @@ footer {
 
 .contact-info {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
     margin-bottom: 40px;
+    gap: 20px;
+}
+
+.contact-info > * { 
+    flex: 1; /* Permet aux éléments de prendre de l’espace de manière équilibrée */
+    min-width: 300px; /* Évite que les éléments deviennent trop petits */
 }
 
 .info-box {
@@ -1079,5 +1086,42 @@ footer {
         width: 60px; /* Taille réduite pour les écrans plus petits */
         height: 60px;
     }
+    .top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .right {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-right: 0;
+    }
+    
 }
 
+@media screen and (max-width: 720px) {
+    .contact-info {
+        flex-direction: column; /* Met les éléments en colonne */
+        align-items: center; /* Centre les éléments */
+    }
+
+    .contact-info > * {
+        width: 100%; /* Prend toute la largeur disponible */
+        text-align: center; /* Centre le texte à l'intérieur */
+    }
+    .image-icons img {
+        width: 30px; /* Réduit la taille des icônes sur petits écrans */
+    }
+   
+}
