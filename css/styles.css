@@ -1121,7 +1121,9 @@ footer {
         text-align: center; /* Centre le texte à l'intérieur */
     }
     .image-icons img {
-        width: 40px; /* Réduit la taille des icônes sur petits écrans */
+        width: 35px; /* Réduit la taille des icônes sur petits écrans */
     }
-   
+    .project-header h2 {
+        font-size: 2rem; /* Réduction supplémentaire pour les petits écrans */
+    }
 }
