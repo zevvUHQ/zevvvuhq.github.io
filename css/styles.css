@@ -1121,7 +1121,7 @@ footer {
         text-align: center; /* Centre le texte à l'intérieur */
     }
     .image-icons img {
-        width: 30px; /* Réduit la taille des icônes sur petits écrans */
+        width: 40px; /* Réduit la taille des icônes sur petits écrans */
     }
    
 }
